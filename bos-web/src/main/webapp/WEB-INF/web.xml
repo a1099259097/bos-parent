@@ -38,14 +38,14 @@
     <filter>
         <filter-name>struts2</filter-name>
         <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
-        <init-param>
+       <!-- <init-param>
             <param-name>filterConfig</param-name>
             <param-value>classpath:struts2/struts.xml</param-value>
-        </init-param>
+        </init-param>-->
     </filter>
     <filter-mapping>
         <filter-name>struts2</filter-name>
-        <url-pattern>/*</url-pattern>
+        <url-pattern>*.html</url-pattern>
         <dispatcher>REQUEST</dispatcher>
         <dispatcher>FORWARD</dispatcher>
     </filter-mapping>
